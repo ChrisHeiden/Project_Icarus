@@ -1,0 +1,95 @@
+.transition{
+    width: 100vw;
+    height: 0;
+    bottom: 0px;
+    opacity: 0;
+  
+    /*
+      position: absolute;
+
+    background: #000;
+    */
+    z-index: 1;
+}
+
+.test{
+  color: #ffffff;
+}
+
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear.fade-appear-active {
+  animation: show 5000ms ease-in;
+}
+
+
+.transitionAnimation{
+  animation: show 3s;
+  animation-delay: 2s;
+  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.transitionHeader{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.transitionHeaderGridPos{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+  
+.transitionHeader h1{
+  color: #ffffff;
+  font-size: 4vw;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+}
+
+.mainFocus{
+  display: grid;
+  grid-template-columns: 70% 27.5% 2.5%;
+  grid-template-rows: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+
+.mainFocusGridPos{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+
+.showBoxes{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 47.5% 2.5% 47.5%;
+  width: 100%;
+  height: 100%;
+}

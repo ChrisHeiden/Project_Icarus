@@ -1,0 +1,41 @@
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+input[type=text]:hover{
+    border:1px solid #1b1b1b;
+}
+
+.field{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.field > input[type=checkbox]
+{
+    margin-top: 0;
+    margin-left: 5%;
+}
+
+.button{
+    margin-left: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d3d3d3;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button:hover{
+    background: #dfdfdf;
+}
+

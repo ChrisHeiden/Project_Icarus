@@ -1,0 +1,73 @@
+.infoDot{
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+.absoluteDot{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    float:left;
+}
+
+.absoluteDot:hover{
+    background: #ff0000;
+}
+
+.plattformDot{
+    /*background: #fff;*/
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-radius: 50%;
+}
+
+.testDot > p{
+    color: #fff;
+    position: relative;
+    top: 20%;
+    left: 100%;
+}
+
+.gridVis{
+    height: 100%;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows:100%;
+}
+
+.hoverInformation{
+    position: absolute;
+    color: #fff;
+}
+
+.hoverDate{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.hoverLocation{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.showInfos{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    justify-items: start;
+    align-items: center;
+}
+.showInfos > p{
+    margin: 0;
+}

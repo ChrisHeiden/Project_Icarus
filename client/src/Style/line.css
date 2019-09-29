@@ -1,0 +1,13 @@
+.line{
+    stroke: #fff;
+    stroke-width:2
+}
+
+.svgArea{
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,176 @@
+.titleGridPos{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.titleFlexLayout{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 30% 30%;
+  width: 100%;
+  height: 100%;
+  justify-items: start;
+}
+
+.titleFlexLayout > h1{
+  font-size: 10vw;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes backgroundMove {
+
+  from {
+    background-position-x: -400%;
+    background-position-y: -400%;  
+  }
+  to {
+    background-position-x: 400%;
+    background-position-y: 400%;  
+  }
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;} 
+} 
+
+.climate{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.change{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+
+svg{
+  overflow: hidden;
+  z-index: -1;
+}
+
+.tagBox{
+  width: 40%;
+  height: 100%;
+  background: #fff;
+}
+
+.tagPoxGridPos{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  align-self: end;
+  justify-self: end;
+}
+
+
+.tagGrid{
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 1% 20% 74% 5%;
+}
+
+.tagSearch{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.tagSearchTitle{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.tagGridPos{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  align-self: center;
+  place-self: center;
+}
+
+.rangeTagsWithBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+}
+
+.rangeTagsWithBox p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.rangeTagsWithBox p {
+  margin: 0;
+  padding: 0;
+}
+
+.line{
+  margin-top: 5.5%;
+  width: 100%;
+  height: 4%;
+  z-index: 4;
+  background-color: powderblue;
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  align-self: end;
+}
+
+.tagMenu{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 20% 20% 20%;
+  justify-items: start;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.tagMenu h1{
+  cursor: pointer;
+  margin: 0;
+}
+
+.underline{
+  background: #1b1b1b;
+  height: 10px;
+  width: 0%;
+  margin-bottom: 15%;
+}
+
+.animateLineOn{
+  animation: createLineWidthOn 2s ease-in-out 0s 1;
+}
+
+@keyframes createLineWidthOn {
+  0% {width: 0%;}
+  100% {width: 100%;} 
+} 
+
+.animateLineOff{
+  animation: createLineWidthOff 2s ease-in-out 0s 1;
+}
+
+@keyframes createLineWidthOff {
+  0% {width: 100%;}
+  100% {width: 0%;} 
+} 
