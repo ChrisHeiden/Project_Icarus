@@ -47,9 +47,14 @@ $ npm install
 $ npm start
 ```
 
+Add your keys and secrets of the plattforms in server/routes/plattformData.js.
+Notice that I used the Twitter, Flickr and the Tumblr APIs. If you try different, the webpage probably won't work.
+
 Start the web application by open a browser and open
 ```url
 $ http://localhost:3000
 ```
 
 If you use Chrome, you get the best outcome. However, it depends on the resolution of the desktop. Unfortunately, the webpage isn't responsive yet.
+
+
